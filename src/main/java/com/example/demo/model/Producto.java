@@ -31,7 +31,7 @@ public class Producto {
 	private Integer idProducto;
 	@Column(name="nombre_producto")
 	private String nombreProducto;
-	private double cantidad;
+	private int cantidad;
 	private double precio;
 	private double total;
 	@Column(name="nro_lote")
@@ -40,6 +40,7 @@ public class Producto {
 	@Column(name="fecha_venta")
 	@DateTimeFormat(iso=org.springframework.format.annotation.DateTimeFormat.ISO.DATE)
 	private Date fechaVenta;
-	
+	@Column(name="cod_barras")
+	private String codigoBarras;
 	
 }

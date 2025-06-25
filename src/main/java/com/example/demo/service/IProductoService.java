@@ -10,4 +10,5 @@ public interface IProductoService {
 	Producto buscarProducto(Integer id);
 	void registrarProducto(Producto producto);
 	void eliminarProducto(Integer id);
+	
 }

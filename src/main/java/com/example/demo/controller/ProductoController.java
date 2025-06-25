@@ -61,5 +61,10 @@ public class ProductoController {
 		}
 		return "redirect:/vistas/listarProductos";
 	}
+	@GetMapping("/eliminarProducto")
+	public String eliminarProducto(@PathVariable int id) {
+		productoServicio.eliminarProducto(id);
+		return "redirect:/vistas/ListadoProductos";
+	}
 	
 }
